@@ -23,6 +23,9 @@
         <eureka.version>2.2.4.RELEASE</eureka.version>
         <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
+
+        <eureka-server.address>localhost</eureka-server.address>
+        <eureka-server.port>8761</eureka-server.port>
     </properties>
     <!--需要公共的模块-->
     <dependencies>
@@ -51,6 +54,24 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
                 <version>${eureka.version}</version>
+            </dependency>
+            <!-- eureka-client服务 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                <version>${eureka.version}</version>
+            </dependency>
+            <!-- springMVC注解引入  -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <!-- thymelaf模板引擎 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

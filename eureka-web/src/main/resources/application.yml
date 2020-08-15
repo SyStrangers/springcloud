@@ -1,0 +1,15 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: eureka-web
+  thymeleaf:
+    encoding: UTF-8
+    cache: false
+    prefix: classpath:/templates/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://@eureka-server.address@:@eureka-server.port@/eureka/
+  instance:
+    prefer-ip-address: true
