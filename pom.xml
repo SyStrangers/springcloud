@@ -9,7 +9,7 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/>
     </parent>
-
+    <!-- 子模块引入需要的  -->
     <groupId>com.stranger</groupId>
     <artifactId>springcloud</artifactId>
     <version>1.0</version>
@@ -59,6 +59,7 @@
     <modules>
         <module>eureka-server</module>
     </modules>
+    <!--  *父亲工程  -->
     <packaging>pom</packaging>
 
     <build>
