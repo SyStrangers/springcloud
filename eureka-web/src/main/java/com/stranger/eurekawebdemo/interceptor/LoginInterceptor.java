@@ -1,4 +1,4 @@
-package com.stranger.eurekaweb.interceptor;
+package com.stranger.eurekawebdemo.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 

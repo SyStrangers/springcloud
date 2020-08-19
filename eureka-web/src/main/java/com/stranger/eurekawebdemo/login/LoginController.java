@@ -1,4 +1,4 @@
-package com.stranger.eurekaweb.login;
+package com.stranger.eurekawebdemo.login;
 
 import org.springframework.stereotype.Controller;
 
