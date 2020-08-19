@@ -7,7 +7,6 @@
         <groupId>com.stranger</groupId>
         <artifactId>springcloud</artifactId>
         <version>1.0</version>
-        <relativePath/>
     </parent>
 
     <groupId>com.stranger</groupId>
@@ -32,6 +31,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
