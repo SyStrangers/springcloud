@@ -11,6 +11,7 @@
         <module name="eureka-server" />
         <module name="eureka-web" />
         <module name="eureka-common-api" />
+        <module name="eureka-server-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

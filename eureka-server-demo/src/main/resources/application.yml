@@ -1,12 +1,10 @@
 server:
-  port: 8761
+  port: 8763
 eureka:
   instance:
-    hostname: localhost
-    #是否显示IP
-    prefer-ip-address: true
-    #服务名称 ${spring.cloud.client.ip-address}为当前的服务IP地址
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: 127.0.0.1
+    prefer-ip-address: true
   client:
     registerWithEureka: true
     #是否从EurekaServer抓取注册信息,默认为true，集群必须设置才能配合ribbon使用负载均衡

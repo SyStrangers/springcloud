@@ -3,11 +3,16 @@ server:
 eureka:
   instance:
     hostname: localhost
+    #是否显示IP
+    prefer-ip-address: true
+    #服务名称 ${spring.cloud.client.ip-address}为当前的服务IP地址
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    #是否从EurekaServer抓取注册信息,默认为true，集群必须设置才能配合ribbon使用负载均衡
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8763/eureka
 spring:
   application:
     name: eureka-server
