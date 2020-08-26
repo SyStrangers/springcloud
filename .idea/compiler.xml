@@ -10,6 +10,7 @@
         <module name="eureka-web" />
         <module name="eureka-web-demo" />
         <module name="eureka-common-api" />
+        <module name="consul-server" />
         <module name="eureka-server" />
         <module name="eureka-server-demo" />
         <module name="zookeeper-server" />
